@@ -28,10 +28,17 @@ The first step is to take advantage of the Foursquare API and get the latitude a
 neighbouhood. 
 
 2. Data exploration
-A thorough observation of data is necessary to identify possiblie anomalies in it. Neighbourhoods whose coordinates could not we 
+A thorough observation of data is necessary to identify possiblie anomalies in it. Neighbourhoods whose coordinates we 
 could not get, were dropped.
 
-3.
+3. Get Venues
+It is needed to get the venues around every Boston neighbourhood, using the Foursquare API again.
+
+4. Clean Venues
+All the different venues may address all the different stores and shops of Boston. We need to throw away the ones that 
+don't cater to our needs and only keep the ones that refer to Coffee Shops.
+
+5. Route Optimization
 
 
 
