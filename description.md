@@ -3,8 +3,16 @@ Boston Coffee Shops and the Travelling Salesman
 
 # Introduction
 The travelling salesman problem has worried logistics managers and route planners for quite a long time now.
-The optimization of FTL (Full-Truck-Load) mileage is the key questions to be answered.
-For reasons of simplicicty, though, this study will focus on minimizing the miles of a truck's full circle
+To cite Wikipedia and its respective site: "Given a list of cities and the distances between each pair of cities,
+what is the shortest possible route that visits each city exactly once and returns to the origin city?".
+In fact, it is a problem of operational research and its solution lies not too far from the traditional method of 
+Simplex.
+
+Moreover, the optimization of FTL (Full-Truck-Load) mileage is the key questions to be answered. A set of questions
+derive from this. How can the FTL mileage be maximised? Assuming a fleet of two or more trucks is available, what 
+is the optimised route for each truck?
+
+But, for reasons of simplicicty, though, this study will focus on minimizing the miles of a truck's full circle
 of their delivery points without taking the full truck load aspect into consideration.
 
 Boston is a very vivid metropolis of the state of Massachusetts. Coffee, as in many other cities of the USA, is
@@ -39,7 +47,19 @@ All the different venues may address all the different stores and shops of Bosto
 don't cater to our needs and only keep the ones that refer to Coffee Shops.
 
 5. Route Optimization
+Gurobi Optimization offers a great library of Optimization tools for the solution of the Travelling Salesman Problem.
+Not only that, but a similar example is readily available at their website.
 
+# Discussion
+The Travelling Salesman Problem, as already mentioned, in its simplest form is not one of rather troublesome nature, when
+the tools are readily available to a professional. The most difficult parts of this research were the engineering of the problem,
+in terms of parameter tuning, data exploration, data cleaning. Further studies can focus on the addition of extra parameters to 
+the problem. Fox example, that of a fleet of more than one trucks, or the maximization of mileage of FTL.
 
+# Conclusion
+To conclude, the derived resulting map connects all the venues derived for the answering of the question and it is shown in the following 
+parts of code and presentation. 
+Lastly, combining the abilities of fetching venues and data through the use of a Foursquare API and bringing them to a form of analytical 
+understanding through the use of the Gurobi Optimization library is a methodology of great and insightful results. 
 
 
